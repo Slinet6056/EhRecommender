@@ -1,0 +1,118 @@
+{
+    "commands": {
+        "start": {
+            "title": "🌟 <b>E-Hentai 推荐机器人</b>",
+            "available_commands": "<b>可用命令：</b>",
+            "favorites": "📚 <b>收藏管理</b>",
+            "recommendations": "🎯 <b>推荐</b>",
+            "statistics": "📊 <b>统计</b>",
+            "others": "⚙️ <b>其他</b>",
+            "help_footer": "💡 使用推荐消息下方的按钮提供反馈，帮助优化推荐算法！"
+        },
+        "sync": {
+            "starting": "🔄 开始增量同步收藏...",
+            "completed": "✅ 增量同步完成！\n新增收藏: {count}",
+            "failed": "❌ 同步失败: {error}"
+        },
+        "fullsync": {
+            "starting": "🔄 开始完整同步收藏（这可能需要一些时间）...",
+            "completed": "✅ 完整同步完成！\n总收藏数: {count}",
+            "failed": "❌ 同步失败: {error}"
+        },
+        "recommend": {
+            "generating": "🔍 正在生成 {count} 条推荐...",
+            "no_results": "😕 目前没有匹配的推荐",
+            "sent": "✅ 已发送 {count} 条推荐",
+            "failed": "❌ 推荐失败: {error}"
+        },
+        "new": {
+            "checking": "🆕 正在检查新图库...",
+            "no_results": "😕 目前没有匹配的新图库",
+            "sent": "✅ 已发送 {count} 条新图库推荐",
+            "failed": "❌ 推荐失败: {error}"
+        },
+        "related": {
+            "no_gid": "❌ 请提供图库ID\n用法: /related <gid>",
+            "invalid_gid": "❌ 无效的图库ID",
+            "finding": "🔍 正在查找与 {gid} 相关的图库...",
+            "no_results": "😕 未找到相关图库",
+            "sent": "✅ 已发送 {count} 条相关推荐",
+            "failed": "❌ 推荐失败: {error}"
+        },
+        "stats": {
+            "title": "📊 <b>统计信息</b>",
+            "favorites": "📚 收藏: {count}",
+            "feedback": "💬 反馈: {count}",
+            "liked": "   👍 喜欢: {count}",
+            "disliked": "   👎 不喜欢: {count}",
+            "recommendations": "🎯 推荐: {count}",
+            "top_tags": "🏷 <b>热门标签：</b>",
+            "tag_item": "   • {tag} ({weight:.2f})",
+            "top_uploaders": "👤 <b>热门上传者：</b>",
+            "uploader_item": "   • {uploader} ({count})",
+            "failed": "❌ 获取统计信息失败: {error}"
+        },
+        "wordcloud": {
+            "generating": "🎨 正在生成标签词云...",
+            "no_data": "😕 数据不足，无法生成词云",
+            "caption": "🏷 您的标签偏好词云",
+            "failed": "❌ 词云生成失败: {error}"
+        },
+        "settings": {
+            "title": "⚙️ <b>当前配置</b>",
+            "min_score": "🎯 最小推荐分数: {value:.0%}",
+            "immediate_push": "⚡️ 即时推送阈值: {value:.0%}",
+            "max_recommendations": "📊 每次查询最大推荐数: {value}",
+            "weight_config": "<b>权重配置：</b>",
+            "tag_weight": "   🏷 标签: {value:.0%}",
+            "uploader_weight": "   👤 上传者: {value:.0%}",
+            "quality_weight": "   ⭐️ 质量: {value:.0%}",
+            "content_weight": "   📝 内容: {value:.0%}",
+            "recency_weight": "   🕐 时效性: {value:.0%}"
+        },
+        "language": {
+            "current": "🌐 当前语言: {language}",
+            "changed": "✅ 语言已切换为: {language}",
+            "invalid": "❌ 无效的语言。可用语言: {languages}",
+            "available": "可用语言：\n{list}"
+        }
+    },
+    "gallery": {
+        "category": "🏷 <b>分类：</b> {category}",
+        "rating": "⭐️ <b>评分：</b> {rating:.2f}/5.0",
+        "pages": "📄 <b>页数：</b> {count}",
+        "uploader": "👤 <b>上传者：</b> {uploader}",
+        "recommendation_score": "🎯 <b>推荐分数：</b> {score:.2%}",
+        "all_tags": "🏷 <b>所有标签：</b> {tags}",
+        "matched_tags": "🔖 <b>匹配标签：</b> {tags}"
+    },
+    "buttons": {
+        "like": "👍 喜欢",
+        "dislike": "👎 不喜欢",
+        "view_related": "🔍 查看相关",
+        "marked_liked": "✅ 已标记为喜欢",
+        "marked_disliked": "✅ 已标记为不喜欢"
+    },
+    "feedback": {
+        "related_sent": "✅ 已发送 {count} 条相关推荐",
+        "operation_failed": "❌ 操作失败: {error}"
+    },
+    "languages": {
+        "en": "English",
+        "zh_CN": "简体中文",
+        "zh_TW": "繁體中文"
+    },
+    "cmd_descriptions": {
+        "start": "显示帮助信息",
+        "sync": "增量同步收藏",
+        "fullsync": "完整同步收藏",
+        "recommend": "获取推荐（默认5条）",
+        "new": "查看新图库推荐",
+        "related": "相关图库推荐",
+        "stats": "查看统计信息",
+        "wordcloud": "生成标签词云",
+        "settings": "查看配置",
+        "help": "显示帮助",
+        "language": "更改语言"
+    }
+}

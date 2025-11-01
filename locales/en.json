@@ -1,0 +1,118 @@
+{
+    "commands": {
+        "start": {
+            "title": "🌟 <b>E-Hentai Recommendation Bot</b>",
+            "available_commands": "<b>Available Commands:</b>",
+            "favorites": "📚 <b>Favorites Management</b>",
+            "recommendations": "🎯 <b>Recommendations</b>",
+            "statistics": "📊 <b>Statistics</b>",
+            "others": "⚙️ <b>Others</b>",
+            "help_footer": "💡 Use the buttons below recommendation messages to provide feedback and help optimize the recommendation algorithm!"
+        },
+        "sync": {
+            "starting": "🔄 Starting incremental sync of favorites...",
+            "completed": "✅ Incremental sync completed!\nNew favorites: {count}",
+            "failed": "❌ Sync failed: {error}"
+        },
+        "fullsync": {
+            "starting": "🔄 Starting full sync of favorites (this may take some time)...",
+            "completed": "✅ Full sync completed!\nTotal favorites: {count}",
+            "failed": "❌ Sync failed: {error}"
+        },
+        "recommend": {
+            "generating": "🔍 Generating {count} recommendations...",
+            "no_results": "😕 No matching recommendations at the moment",
+            "sent": "✅ Sent {count} recommendations",
+            "failed": "❌ Recommendation failed: {error}"
+        },
+        "new": {
+            "checking": "🆕 Checking for new galleries...",
+            "no_results": "😕 No matching new galleries at the moment",
+            "sent": "✅ Sent {count} new gallery recommendations",
+            "failed": "❌ Recommendation failed: {error}"
+        },
+        "related": {
+            "no_gid": "❌ Please provide a gallery ID\nUsage: /related <gid>",
+            "invalid_gid": "❌ Invalid gallery ID",
+            "finding": "🔍 Finding galleries related to {gid}...",
+            "no_results": "😕 No related galleries found",
+            "sent": "✅ Sent {count} related recommendations",
+            "failed": "❌ Recommendation failed: {error}"
+        },
+        "stats": {
+            "title": "📊 <b>Statistics</b>",
+            "favorites": "📚 Favorites: {count}",
+            "feedback": "💬 Feedback: {count}",
+            "liked": "   👍 Liked: {count}",
+            "disliked": "   👎 Disliked: {count}",
+            "recommendations": "🎯 Recommendations: {count}",
+            "top_tags": "🏷 <b>Top Tags:</b>",
+            "tag_item": "   • {tag} ({weight:.2f})",
+            "top_uploaders": "👤 <b>Top Uploaders:</b>",
+            "uploader_item": "   • {uploader} ({count})",
+            "failed": "❌ Failed to get statistics: {error}"
+        },
+        "wordcloud": {
+            "generating": "🎨 Generating tag word cloud...",
+            "no_data": "😕 Not enough data to generate word cloud",
+            "caption": "🏷 Your Tag Preference Word Cloud",
+            "failed": "❌ Word cloud generation failed: {error}"
+        },
+        "settings": {
+            "title": "⚙️ <b>Current Configuration</b>",
+            "min_score": "🎯 Min Recommendation Score: {value:.0%}",
+            "immediate_push": "⚡️ Immediate Push Threshold: {value:.0%}",
+            "max_recommendations": "📊 Max Recommendations Per Query: {value}",
+            "weight_config": "<b>Weight Configuration:</b>",
+            "tag_weight": "   🏷 Tags: {value:.0%}",
+            "uploader_weight": "   👤 Uploader: {value:.0%}",
+            "quality_weight": "   ⭐️ Quality: {value:.0%}",
+            "content_weight": "   📝 Content: {value:.0%}",
+            "recency_weight": "   🕐 Recency: {value:.0%}"
+        },
+        "language": {
+            "current": "🌐 Current language: {language}",
+            "changed": "✅ Language changed to: {language}",
+            "invalid": "❌ Invalid language. Available languages: {languages}",
+            "available": "Available languages:\n{list}"
+        }
+    },
+    "gallery": {
+        "category": "🏷 <b>Category:</b> {category}",
+        "rating": "⭐️ <b>Rating:</b> {rating:.2f}/5.0",
+        "pages": "📄 <b>Pages:</b> {count}",
+        "uploader": "👤 <b>Uploader:</b> {uploader}",
+        "recommendation_score": "🎯 <b>Recommendation Score:</b> {score:.2%}",
+        "all_tags": "🏷 <b>All Tags:</b> {tags}",
+        "matched_tags": "🔖 <b>Matched Tags:</b> {tags}"
+    },
+    "buttons": {
+        "like": "👍 Like",
+        "dislike": "👎 Dislike",
+        "view_related": "🔍 View Related",
+        "marked_liked": "✅ Marked as Liked",
+        "marked_disliked": "✅ Marked as Disliked"
+    },
+    "feedback": {
+        "related_sent": "✅ Sent {count} related recommendations",
+        "operation_failed": "❌ Operation failed: {error}"
+    },
+    "languages": {
+        "en": "English",
+        "zh_CN": "简体中文",
+        "zh_TW": "繁體中文"
+    },
+    "cmd_descriptions": {
+        "start": "Show help information",
+        "sync": "Incremental sync favorites",
+        "fullsync": "Full sync favorites",
+        "recommend": "Get recommendations (default 5)",
+        "new": "View new gallery recommendations",
+        "related": "Related gallery recommendations",
+        "stats": "View statistics",
+        "wordcloud": "Generate tag word cloud",
+        "settings": "View configuration",
+        "help": "Show help",
+        "language": "Change language"
+    }
+}

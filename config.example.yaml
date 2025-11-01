@@ -1,0 +1,47 @@
+# EHDB Database (read-only)
+ehdb_database:
+  host: localhost
+  port: 5432
+  user: ehdb
+  password: password
+  dbname: ehentai_db
+
+# Local SQLite Database
+local_database: ./data/recommender.db
+
+# E-Hentai Crawler Configuration
+crawler:
+  host: exhentai.org  # or e-hentai.org
+  cookies: ""  # Cookie string copied from browser
+  proxy: ""  # e.g.: socks5://127.0.0.1:1080 or http://proxy:port
+  retry_times: 3
+  timeout: 30
+
+# Telegram Bot
+telegram:
+  token: ""  # Bot Token from @BotFather
+  chat_id: 0  # Your Telegram Chat ID
+  notification_mode: immediate  # immediate/batch/manual
+  proxy: ""  # Optional: Proxy URL for Telegram (e.g.: socks5://127.0.0.1:1080 or http://proxy:port). Leave empty if no proxy needed.
+
+# Recommendation Algorithm Parameters
+recommender:
+  min_score_threshold: 0.70  # Minimum recommendation score
+  immediate_push_threshold: 0.85  # Immediate push threshold
+  max_recommendations_per_query: 10
+  pool_sampling_multiplier: 30
+  recommendation_expiry_days: 30  # Recommendation record expiry days, can be recommended again after expiry
+  tag_weight: 0.60
+  uploader_weight: 0.10
+  quality_weight: 0.15
+  content_weight: 0.12
+  recency_weight: 0.03
+
+# Scheduled Tasks
+scheduler:
+  favorites_sync_cron: "0 3 * * *"  # Daily at 3 AM
+  new_gallery_check_cron: "0 * * * *"  # Every hour
+  batch_notification_cron: "0 20 * * *"  # Daily at 8 PM
+
+# Logging
+log_level: INFO
